@@ -14,6 +14,7 @@
     "lib"
   ],
   "scripts": {
+    "benchmark": "yarn build && babel benchmark.ts | node",
     "build": "rm -rf lib/ && yarn build:types && yarn build:webpack",
     "build:types": "tsc -p tsconfig.types.json",
     "build:webpack": "NODE_ENV=production webpack",
@@ -48,10 +49,12 @@
     "@types/jest": "27.5.2",
     "@types/node": "16",
     "babel-loader": "8.2.5",
+    "benny": "3.7.1",
     "eslint": "8.16.0",
     "husky": "8.0.1",
     "jest": "28.1.0",
     "lint-staged": "13.0.0",
+    "natural-orderby": "2.0.3",
     "prettier": "2.6.2",
     "typescript": "4.7.2",
     "webpack": "5.72.1",
