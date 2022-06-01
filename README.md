@@ -498,6 +498,12 @@ users.sort((a, b) => compare()(a.lastLogin.ip, b.lastLogin.ip));
 //    ]
 ```
 
+## See Also
+
+- [fast-normalize-spaces](https://github.com/shelfio/fast-normalize-spaces)
+- [fast-uslug](https://github.com/shelfio/fast-uslug)
+- [fast-chunk-string](https://github.com/shelfio/fast-chunk-string)
+
 ## Credits
 
 - [@yobacca](https://github.com/yobacca): forked from [his repo](https://github.com/yobacca/natural-orderby) to improve performance.
