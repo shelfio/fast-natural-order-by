@@ -9,11 +9,29 @@
 $ yarn add @shelf/fast-natural-order-by
 ```
 
+## Intro
+
 People sort strings containing numbers differently than most sorting algorithms, which sort values by comparing strings in Unicode code point order. This produces an ordering that is inconsistent with human logic.
 
 `@shelf/fast-natural-order-by` sorts the primitive values of [`Boolean`](https://developer.mozilla.org/en-US/docs/Glossary/Boolean), [`Null`](https://developer.mozilla.org/en-US/docs/Glossary/Null), [`Undefined`](https://developer.mozilla.org/en-US/docs/Glossary/Undefined), [`Number`](https://developer.mozilla.org/en-US/docs/Glossary/Number) or [`String`](https://developer.mozilla.org/en-US/docs/Glossary/String) type as well as [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) objects. When comparing strings it differentiates between unicode characters, integer, floating as well as hexadecimal numbers, various date formats, etc. You may sort flat or nested arrays or arrays of objects in a natural sorting order using `@shelf/fast-natural-order-by`.
 
 In addition to the efficient and fast `orderBy()` method `@shelf/fast-natural-order-by` also provides the method `compare()`, which may be passed to [`Array.prototype.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
+
+### Benchmark
+
+This is a fork of [natural-orderby](https://github.com/yobacca/natural-orderby)
+that fixes performance when sorting strings longer than 20 characters (**~150,000x faster**).
+
+Here are the benchmark results of sorting array with **ONE SINGLE (1)** element with a
+string 200 chars long that you can run by running `yarn benchmark` command:
+
+```
+  original:
+    5 ops/s, ±0.29%         | slowest, 100% slower
+
+  optimized:
+    773 712 ops/s, ±0.24%   | fastest
+```
 
 ## Usage
 
