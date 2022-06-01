@@ -1,7 +1,7 @@
 {
-  "name": "@shelf/xxxxxx",
+  "name": "@shelf/fast-natural-order-by",
   "version": "0.0.0",
-  "description": "xxxxxx",
+  "description": "Lightweight and performant natural sorting of arrays and collections by differentiating between unicode characters, numbers, dates, etc. 150,000x faster fork of natural-orderby for longer strings",
   "license": "MIT",
   "author": {
     "name": "Vlad Holubiev",
@@ -14,9 +14,9 @@
     "lib"
   ],
   "scripts": {
-    "build": "rm -rf lib/ && yarn build:types && yarn build:code",
-    "build:code": "babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts' && find ./lib -name '*.test.d.ts' -delete",
-    "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
+    "build": "rm -rf lib/ && yarn build:types && yarn build:webpack",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build:webpack": "NODE_ENV=production webpack",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --ext .js,.ts,.json",
@@ -50,12 +50,15 @@
     "@shelf/tsconfig": "0.0.6",
     "@types/jest": "27.5.2",
     "@types/node": "16",
+    "babel-loader": "8.2.5",
     "eslint": "8.16.0",
     "husky": "8.0.1",
     "jest": "28.1.0",
     "lint-staged": "13.0.0",
     "prettier": "2.6.2",
-    "typescript": "4.7.2"
+    "typescript": "4.7.2",
+    "webpack": "5.72.1",
+    "webpack-cli": "4.9.2"
   },
   "engines": {
     "node": ">=16"
