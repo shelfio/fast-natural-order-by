@@ -1,16 +1,20 @@
 import type {ParsedNumber} from '../types';
 import {RE_DATE} from './regex';
 
-const parseDate = (value: string): ParsedNumber | undefined => {
-  if (RE_DATE.test(value)) {
+const parseDate = (value: string): ParsedNumber | void => {
+  try {
     const parsedDate = Date.parse(value);
 
     if (!Number.isNaN(parsedDate)) {
-      return parsedDate;
+      if (RE_DATE.test(value)) {
+        return parsedDate;
+      }
     }
-  }
 
-  return undefined;
+    return undefined;
+  } catch {
+    return undefined;
+  }
 };
 
 export default parseDate;
