@@ -1,7 +1,9 @@
 # fast-natural-order-by [![CircleCI](https://circleci.com/gh/shelfio/fast-natural-order-by/tree/master.svg?style=svg)](https://circleci.com/gh/shelfio/fast-natural-order-by/tree/master)![](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 
 > Lightweight (< 2.3kB gzipped) and performant natural sorting of arrays and collections by differentiating between unicode characters, numbers, dates, etc.
-> A fork of [natural-orderby](https://github.com/yobacca/natural-orderby) that **fixes performance when sorting strings longer than 20 characters (~150,000x faster)**
+
+> A fork of [natural-orderby](https://github.com/yobacca/natural-orderby) that **fixes performance when sorting strings longer than 20 characters (~150,000x faster).**
+> Also, re-written from Flow to Typescript
 
 ## Install
 
