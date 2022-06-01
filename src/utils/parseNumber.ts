@@ -1,6 +1,6 @@
 import type {ParsedNumber} from '../types';
 
-const parseNumber = (value: string): ParsedNumber | void => {
+const parseNumber = (value: string): ParsedNumber | undefined => {
   if (value.length !== 0) {
     const parsedNumber = Number(value);
 

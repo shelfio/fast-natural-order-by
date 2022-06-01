@@ -6,7 +6,7 @@ export type CompareOptions =
       order?: OrderEnum;
     }
   | OrderEnum
-  | void;
+  | undefined;
 export type BaseCompareOptions = {
   order: Order;
 };
