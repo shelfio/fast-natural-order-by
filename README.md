@@ -35,6 +35,9 @@ string 200 chars long that you can run by running `yarn benchmark` command:
     773 712 ops/s, ±0.24%   | fastest
 ```
 
+See [this commit](https://github.com/shelfio/fast-natural-order-by/commit/7dd90e00503149ba75fdbefa0247b9d7a25f1745) to udnerstand
+how the performance was fixed.
+
 ## Usage
 
 ```ts
@@ -497,9 +500,9 @@ users.sort((a, b) => compare()(a.lastLogin.ip, b.lastLogin.ip));
 
 ## Credits
 
-Forked from https://github.com/yobacca/natural-orderby to improve performance.
-
-Originally inspired by [The Alphanum Algorithm](http://www.davekoelle.com/alphanum.html) from Dave Koelle.
+- [@yobacca](https://github.com/yobacca): forked from [his repo](https://github.com/yobacca/natural-orderby) to improve performance.
+- [@JordanAtBridgit](https://github.com/JordanAtBridgit) for [localizing the performance problem](https://github.com/yobacca/natural-orderby/issues/101#issuecomment-896318773)
+- Originally inspired by [The Alphanum Algorithm](http://www.davekoelle.com/alphanum.html) from Dave Koelle.
 
 ## Publish
 
