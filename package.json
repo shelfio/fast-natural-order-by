@@ -36,9 +36,6 @@
       ".husky/validate-circleci-config.sh"
     ]
   },
-  "babel": {
-    "extends": "@shelf/babel-config/backend"
-  },
   "prettier": "@shelf/prettier-config",
   "dependencies": {},
   "devDependencies": {
