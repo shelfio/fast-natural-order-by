@@ -48,7 +48,7 @@
     "@shelf/tsconfig": "0.0.9",
     "@types/jest": "28.1.8",
     "@types/node": "16",
-    "babel-loader": "8.3.0",
+    "babel-loader": "9.1.0",
     "benny": "3.7.1",
     "eslint": "8.27.0",
     "husky": "8.0.2",
