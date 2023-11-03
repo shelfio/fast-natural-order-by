@@ -17,7 +17,7 @@
     "lib"
   ],
   "scripts": {
-    "benchmark": "yarn build && tsc benchmark.ts | node",
+    "benchmark": "yarn build && npx tsx benchmark.ts",
     "build": "rm -rf lib/ && tsc",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
@@ -41,21 +41,21 @@
   },
   "prettier": "@shelf/prettier-config",
   "devDependencies": {
-    "@shelf/eslint-config": "2.18.0",
+    "@shelf/eslint-config": "3.10.0",
     "@shelf/prettier-config": "1.0.0",
-    "@shelf/tsconfig": "0.0.9",
+    "@shelf/tsconfig": "0.0.11",
     "@size-limit/preset-small-lib": "10.0.2",
-    "@types/jest": "28.1.8",
+    "@types/jest": "29.5.7",
     "@types/node": "16",
     "benny": "3.7.1",
-    "eslint": "8.43.0",
+    "eslint": "8.52.0",
     "husky": "8.0.3",
-    "jest": "28.1.3",
-    "lint-staged": "13.1.0",
+    "jest": "29.7.0",
+    "lint-staged": "15.0.2",
     "natural-orderby": "2.0.3",
-    "prettier": "2.8.7",
+    "prettier": "3.0.3",
     "size-limit": "10.0.2",
-    "typescript": "4.8.4"
+    "typescript": "5.2.2"
   },
   "engines": {
     "node": ">=14"
