@@ -1,8 +1,8 @@
-import type {ChunkMaps} from '../types';
-import {RE_UNICODE_CHARACTERS} from './regex';
-import compareNumbers from './compareNumbers';
-import compareUnicode from './compareUnicode';
-import stringCompare from './stringCompare';
+import type {ChunkMaps} from '../types.js';
+import {RE_UNICODE_CHARACTERS} from './regex.js';
+import compareNumbers from './compareNumbers.js';
+import compareUnicode from './compareUnicode.js';
+import stringCompare from './stringCompare.js';
 
 const compareChunks = (chunksA: ChunkMaps, chunksB: ChunkMaps): number => {
   const lengthA = chunksA.length;

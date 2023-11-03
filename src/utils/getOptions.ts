@@ -1,4 +1,4 @@
-import type {BaseCompareOptions, CompareOptions, OrderEnum} from '../types';
+import type {BaseCompareOptions, CompareOptions, OrderEnum} from '../types.js';
 
 const isValidOrder = (value: unknown | null | undefined): boolean =>
   typeof value === 'string' && (value === 'asc' || value === 'desc');

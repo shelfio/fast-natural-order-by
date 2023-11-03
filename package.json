@@ -8,16 +8,17 @@
     "email": "vlad@shelf.io",
     "url": "https://shelf.io"
   },
-  "main": "lib",
+  "type": "module",
+  "sideEffects": false,
+  "exports": "./lib/index.js",
+  "module": "./lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "benchmark": "yarn build && babel benchmark.ts | node",
-    "build": "rm -rf lib/ && yarn build:types && yarn build:webpack",
-    "build:types": "tsc -p tsconfig.types.json",
-    "build:webpack": "NODE_ENV=production webpack",
+    "benchmark": "yarn build && tsc benchmark.ts | node",
+    "build": "rm -rf lib/ && tsc",
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --ext .js,.ts,.json",

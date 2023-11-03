@@ -1,6 +1,6 @@
-import baseCompare from '../utils/baseCompare';
-import getOptions from '../utils/getOptions';
-import type {CompareFn, CompareOptions} from '../types';
+import baseCompare from '../utils/baseCompare.js';
+import getOptions from '../utils/getOptions.js';
+import type {CompareFn, CompareOptions} from '../types.js';
 
 /**
  * Creates a compare function that defines the natural sort order considering

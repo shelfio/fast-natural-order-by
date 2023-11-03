@@ -1,7 +1,7 @@
-import baseOrderBy from '../utils/baseOrderBy';
-import getIdentifiers from '../utils/getIdentifiers';
-import getOrders from '../utils/getOrders';
-import type {Identifier, Order} from '../types';
+import baseOrderBy from '../utils/baseOrderBy.js';
+import getIdentifiers from '../utils/getIdentifiers.js';
+import getOrders from '../utils/getOrders.js';
+import type {Identifier, Order} from '../types.js';
 
 /**
  * Creates an array of elements, natural sorted by specified identifiers and

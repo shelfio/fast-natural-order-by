@@ -1,13 +1,13 @@
-import type {MappedValueRecord} from '../types';
-import stringify from './stringify';
-import numberify from './numberify';
-import createChunkMaps from './createChunkMaps';
-import isFunction from './isFunction';
-import isNaN from './isNaN';
-import isNull from './isNull';
-import isObject from './isObject';
-import isSymbol from './isSymbol';
-import isUndefined from './isUndefined';
+import type {MappedValueRecord} from '../types.js';
+import stringify from './stringify.js';
+import numberify from './numberify.js';
+import createChunkMaps from './createChunkMaps.js';
+import isFunction from './isFunction.js';
+import isNaN from './isNaN.js';
+import isNull from './isNull.js';
+import isObject from './isObject.js';
+import isSymbol from './isSymbol.js';
+import isUndefined from './isUndefined.js';
 
 const getMappedValueRecord = (value: unknown): MappedValueRecord => {
   if (

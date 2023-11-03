@@ -1,7 +1,7 @@
-import type {MappedValueRecord} from '../types';
-import compareNumbers from './compareNumbers';
-import compareChunks from './compareChunks';
-import compareOtherTypes from './compareOtherTypes';
+import type {MappedValueRecord} from '../types.js';
+import compareNumbers from './compareNumbers.js';
+import compareChunks from './compareChunks.js';
+import compareOtherTypes from './compareOtherTypes.js';
 
 const compareValues = (valueA: MappedValueRecord, valueB: MappedValueRecord): number => {
   if (valueA.value === valueB.value) {

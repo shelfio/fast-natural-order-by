@@ -1,10 +1,10 @@
 /* eslint-disable multiline-ternary */
-import compareMultiple from './compareMultiple';
-import createIdentifierFn from './createIdentifierFn';
-import getMappedValueRecord from './getMappedValueRecord';
-import getValueByIdentifier from './getValueByIdentifier';
-import getElementByIndex from './getElementByIndex';
-import type {Identifier, IdentifierFn, MappedCollection, Order} from '../types';
+import compareMultiple from './compareMultiple.js';
+import createIdentifierFn from './createIdentifierFn.js';
+import getMappedValueRecord from './getMappedValueRecord.js';
+import getValueByIdentifier from './getValueByIdentifier.js';
+import getElementByIndex from './getElementByIndex.js';
+import type {Identifier, IdentifierFn, MappedCollection, Order} from '../types.js';
 
 const baseOrderBy = <T>(
   collection: ReadonlyArray<T>,

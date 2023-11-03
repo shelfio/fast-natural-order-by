@@ -1,6 +1,6 @@
 import benny from 'benny';
 import {orderBy as orderByOriginal} from 'natural-orderby';
-import {orderBy as orderByOptimized} from './lib';
+import {orderBy as orderByOptimized} from './lib/index.js';
 
 const inputArray = [
   {

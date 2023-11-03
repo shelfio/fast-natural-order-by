@@ -1,5 +1,5 @@
-import type {MappedRecord, Order} from '../types';
-import compareValues from './compareValues';
+import type {MappedRecord, Order} from '../types.js';
+import compareValues from './compareValues.js';
 
 const compareMultiple = (
   recordA: MappedRecord,

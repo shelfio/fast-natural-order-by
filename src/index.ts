@@ -3,7 +3,7 @@
 //
 // https://github.com/yobacca/natural-sort-order
 // released under MIT License
-import orderBy from './orderBy';
-import compare from './compare';
+import orderBy from './orderBy/index.js';
+import compare from './compare/index.js';
 
 export {orderBy, compare};

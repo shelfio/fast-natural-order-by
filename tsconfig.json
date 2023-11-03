@@ -1,8 +1,12 @@
 {
   "extends": "@shelf/tsconfig/backend",
   "compilerOptions": {
-    "strict": true
+    "declaration": true,
+    "moduleResolution": "node16",
+    "module": "node16",
+    "target": "ESNext",
+    "outDir": "lib"
   },
   "exclude": ["node_modules"],
-  "include": ["src"]
+  "include": ["src/index.ts"]
 }

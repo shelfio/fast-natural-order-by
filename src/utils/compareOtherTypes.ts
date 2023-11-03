@@ -1,4 +1,4 @@
-import type {MappedValueRecord} from '../types';
+import type {MappedValueRecord} from '../types.js';
 
 const compareOtherTypes = (valueA: MappedValueRecord, valueB: MappedValueRecord): number => {
   if (!valueA.chunks ? valueB.chunks : !valueB.chunks) {

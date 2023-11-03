@@ -1,8 +1,6 @@
-import {RE_LEADING_OR_TRAILING_WHITESPACES} from './regex';
+import {RE_LEADING_OR_TRAILING_WHITESPACES} from './regex.js';
 
-const stringify = (
-  value: string | number | boolean | boolean | number | string | Date | any
-): string => {
+const stringify = (value: string | number | boolean | Date | any): string => {
   if (typeof value === 'boolean' || value instanceof Boolean) {
     return Number(value).toString();
   }

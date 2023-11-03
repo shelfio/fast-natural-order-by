@@ -1,4 +1,4 @@
-import type {Order} from '../types';
+import type {Order} from '../types.js';
 
 const getOrders = (
   orders?: (ReadonlyArray<Order> | null | undefined) | (Order | null | undefined)

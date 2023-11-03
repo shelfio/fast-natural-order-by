@@ -1,4 +1,4 @@
-import type {ParsedNumber} from '../types';
+import type {ParsedNumber} from '../types.js';
 
 const parseNumber = (value: string): ParsedNumber | undefined => {
   if (value.length !== 0) {

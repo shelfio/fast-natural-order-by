@@ -1,4 +1,4 @@
-import type {Identifier, IdentifierFn} from '../types';
+import type {Identifier, IdentifierFn} from '../types.js';
 
 const createIdentifierFn = <T>(identifier: Identifier<T>): IdentifierFn<T> => {
   if (typeof identifier === 'function') {

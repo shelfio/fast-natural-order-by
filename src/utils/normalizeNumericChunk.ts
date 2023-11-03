@@ -1,6 +1,6 @@
-import type {Chunk, Chunks} from '../types';
-import {RE_INT_OR_FLOAT, RE_LEADING_ZERO} from './regex';
-import parseNumber from './parseNumber';
+import type {Chunk, Chunks} from '../types.js';
+import {RE_INT_OR_FLOAT, RE_LEADING_ZERO} from './regex.js';
+import parseNumber from './parseNumber.js';
 
 const normalizeNumericChunk = (chunk: Chunk, index: number, chunks: Chunks): number | undefined => {
   if (RE_INT_OR_FLOAT.test(chunk)) {

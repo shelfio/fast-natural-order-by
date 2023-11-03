@@ -1,5 +1,5 @@
-import type {ParsedNumber} from '../types';
-import {RE_DATE} from './regex';
+import type {ParsedNumber} from '../types.js';
+import {RE_DATE} from './regex.js';
 
 const parseDate = (value: string): ParsedNumber | undefined => {
   try {

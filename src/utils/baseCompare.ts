@@ -1,6 +1,6 @@
-import getMappedValueRecord from './getMappedValueRecord';
-import compareValues from './compareValues';
-import type {BaseCompareOptions} from '../types';
+import getMappedValueRecord from './getMappedValueRecord.js';
+import compareValues from './compareValues.js';
+import type {BaseCompareOptions} from '../types.js';
 
 function baseCompare(options: BaseCompareOptions) {
   return (valueA: unknown, valueB: unknown): number => {
