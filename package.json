@@ -21,6 +21,7 @@
     "coverage": "yarn test --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --ext .js,.ts,.json",
+    "lint:size": "size-limit",
     "prepack": "yarn build",
     "test": "TZ=UTC jest src",
     "type-check": "tsc --noEmit",
@@ -38,7 +39,10 @@
     ]
   },
   "prettier": "@shelf/prettier-config",
-  "dependencies": {},
+  "dependencies": {
+    "@size-limit/preset-small-lib": "10.0.2",
+    "size-limit": "10.0.2"
+  },
   "devDependencies": {
     "@babel/cli": "7.22.5",
     "@babel/core": "7.22.5",
