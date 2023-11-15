@@ -2,6 +2,7 @@
 
 > Lightweight (< 2.3kB gzipped) and performant natural sorting of arrays and collections by differentiating between unicode characters, numbers, dates, etc.
 
+> Note: The permormance fixes & typescript were ported into [natural-orderby](https://github.com/yobacca/natural-orderby) `>3.0.2`, so `>2` of this package just re-export the methods of natural-orderby & provide ESM only build
 > A fork of [natural-orderby](https://github.com/yobacca/natural-orderby) that **fixes performance when sorting strings longer than 20 characters (~150,000x faster).**
 > Also, re-written from Flow to Typescript
 
