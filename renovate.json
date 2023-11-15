@@ -1,7 +1,5 @@
 {
   "extends": ["config:base"],
-  "labels": ["dependencies", "backend"],
-  "ignoreDeps": [
-    "@types/node"
-  ]
+  "labels": ["backend"],
+  "ignoreDeps": ["@types/node"]
 }
