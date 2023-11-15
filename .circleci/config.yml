@@ -13,10 +13,8 @@ commands:
     steps:
       - node/install-packages:
           pkg-manager: yarn
-          cache-version: v1-all
-          cache-only-lockfile: true
+          with-cache: false
           app-dir: ~/repo
-          override-ci-command: yarn install --pure-lockfile --no-progress
 
 jobs:
   build:

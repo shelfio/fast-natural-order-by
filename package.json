@@ -34,6 +34,9 @@
     ".circleci/config.yml": ".husky/validate-circleci-config.sh"
   },
   "prettier": "@shelf/prettier-config",
+  "dependencies": {
+    "natural-orderby": "3.0.2"
+  },
   "devDependencies": {
     "@shelf/eslint-config": "3.10.0",
     "@shelf/prettier-config": "1.0.0",
@@ -55,8 +58,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "natural-orderby": "3.0.2"
   }
 }
