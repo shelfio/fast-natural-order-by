@@ -24,7 +24,7 @@
     "lint:ci": "eslint . --ext .js,.ts,.json",
     "lint:size": "size-limit",
     "prepack": "yarn build",
-    "test": "TZ=UTC jest src",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest src",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
