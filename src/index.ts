@@ -1,9 +1,2 @@
-// Javascript natural sort algorithm with unicode support
-// based on chunking idea by Dave Koelle
-//
-// https://github.com/yobacca/natural-sort-order
-// released under MIT License
-import orderBy from './orderBy';
-import compare from './compare';
-
-export {orderBy, compare};
+// eslint-disable-next-line no-restricted-imports
+export {orderBy, compare} from 'natural-orderby';
