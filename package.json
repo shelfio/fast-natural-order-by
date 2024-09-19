@@ -35,7 +35,7 @@
   },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
-    "natural-orderby": "3.0.2"
+    "natural-orderby": "4.0.0"
   },
   "devDependencies": {
     "@shelf/eslint-config": "3.10.0",
