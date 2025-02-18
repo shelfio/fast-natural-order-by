@@ -43,7 +43,7 @@
     "@shelf/tsconfig": "0.1.0",
     "@size-limit/preset-small-lib": "10.0.3",
     "@types/jest": "29.5.14",
-    "@types/node": "18",
+    "@types/node": "22",
     "benny": "3.7.1",
     "eslint": "9.20.1",
     "husky": "8.0.3",
@@ -54,7 +54,7 @@
     "typescript": "5.7.3"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "publishConfig": {
     "access": "public"
