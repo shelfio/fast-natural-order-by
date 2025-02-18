@@ -1,6 +1,6 @@
 {
   "name": "@shelf/fast-natural-order-by",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Lightweight and performant natural sorting of arrays and collections by differentiating between unicode characters, numbers, dates, etc. 150,000x faster fork of natural-orderby for longer strings",
   "license": "MIT",
   "author": {
