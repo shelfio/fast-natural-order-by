@@ -28,11 +28,6 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
-  "lint-staged": {
-    "*.{html,md,yml}": "prettier --write",
-    "*.{js,ts,json}": "eslint --fix",
-    ".circleci/config.yml": ".husky/validate-circleci-config.sh"
-  },
   "prettier": "@shelf/prettier-config",
   "dependencies": {
     "natural-orderby": "5.0.0"
